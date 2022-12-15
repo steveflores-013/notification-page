@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    max-width: 900px;
+}
+
+.header__Text-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Text-Container__h1--span{
+    width: 1.5rem;
+    margin-left: .6rem;
+    padding-left: .7rem;
+    background-color:hsl(219, 90%, 23%);
+    color: aliceblue;
+    border-radius: .5rem;
+    font-size: 1.3em;
+   
+}
+
+.Text-Container__h1{
+    font-size: 15px;
+}
+.Text-Container__span{
+    color: gray;
+    font-size: 13px;
+    &:hover{
+        cursor:pointer;
+        color: hsl(219, 90%, 23%);
+    }
+}
+
+.main{
+    font-size: 15px;
+    color:hsl(219, 12%, 42%) ; 
+    
+}
+.main__Section-Notification{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+
+.notification_info{
+    position: relative;
+    display: flex;
+   padding-top: 1rem;
+   padding-left: .7rem;
+   padding-right: 2rem;
+   gap: .6rem;
+    min-height: 4rem;
+    background-color: hsla(219, 32%, 74%, 0.1);
+}
+.notification_info--4{
+    min-height: 13rem;
+    background-color: hsl(0, 0%, 100%);
+}
+.notification__Avatar{
+    background-color: blueviolet;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+.notification_info__name{
+    color: #000;
+    &:hover{
+        cursor:pointer;
+        color: hsl(219, 90%, 23%);
+    }
+}
+.notification_info__span{
+    font-size: 14px;
+}
+.notification_info__title{
+    &:hover{
+        cursor:pointer;
+        color: hsl(219, 90%, 23%);
+    }
+}
+
+.time-color{
+    font-weight: 100;
+}
+.notification_info__time,.notification_info__time4,.notification_info__time3,.notification_info__time5{
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+}
+.notification_info__time2,.notification_info__time7{
+    position: absolute;
+    top: 1rem;
+    left: 3.5rem;
+}
+.notification_info__time6{
+    position: absolute;
+    top: 3rem;
+    left: 3.5rem;
+}
+
+.chess{
+    color: hsl(219, 85%, 26%);
+    &:hover{
+        cursor:pointer;
+        color: hsl(219, 90%, 23%);
+    }
+}
+
+
+.notification_infor__mensaje{
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+    width: 15rem;
+    outline: 0.6px solid gray;
+    padding: .1rem 1rem;
+    &:hover{
+        cursor:pointer;
+        background-color: hsla(219, 87%, 53%, 0.300);
+    }
+    
+}
+.mensaje{
+    font-size: 16px;
+}
+.active{
+    background-color: hsl(0, 0%, 100%);
+}
+.picture_Notification{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+    border:1px solid gray;
+    border-radius: 20%;
+    cursor: pointer;
+}
+.notification_info__span::after{
+    content: "";
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: red;
+    visibility: hidden;
+}
+ .notification_info.red .notification_info__span::after{
+    visibility: visible;
+}
+@media screen and (min-width:1024px) {
+    .notification_info__time3,.notification_info__time5{
+        top: 1rem;
+    }
+    .notification_info__time6{
+        top: .5rem;
+    }
+}
+
+@media screen and (min-width:800px){
+    body{
+        margin: 0 25%;
+    }
+    .header__Text-Container{
+        justify-content: space-around;
+    }
+    .main__Section-Notification{
+        justify-content: center;
+     
+       
+    }
+  
+}
+
+@media screen and (min-width:500px){
+
+    .notification_info__time,.notification_info__time4{
+        top: 1.7rem;
+    }
+  
+    .notification_info__time2,.notification_info__time7{
+        top: 1rem;
+    }
+    
+    .notification_info__time6{
+        top: 3rem;
+    }
+}
+
+@media screen and (min-width:400px){
+    .notification_info__time4{
+        top: 1rem;
+        left: 3.5rem;
+    }
+}
